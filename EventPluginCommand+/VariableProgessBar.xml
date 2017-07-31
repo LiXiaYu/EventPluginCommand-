@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PluginStore>
+  <plugin name="VariableProgessBar" text="VariableProgessBar" note="">
+    <command name="清空" text="clear" note="">
+
+    </command>
+    <command name="添加" text="add" note="">
+      <parameter name="变量号" note=""/>
+      <parameter name="上限" note=""/>
+    </command>
+    <command name="删除" text="delete" note="删除一个变量进度条">
+      <parameter name="变量号" note="要删除的变量进度条的变量号"/>
+    </command>
+  </plugin>
+</PluginStore>
