@@ -136,7 +136,12 @@ namespace EventPluginCommand_
 
         private void buttonCopy_Click(object sender, EventArgs e)
         {
-            string scommand = @"[{""code"":356,""indent"":0,""parameters"":[""" + this.plugin.text + @" " + this.command.text;
+            string scommand = @"[{""code"":356,""indent"":0,""parameters"":[""" + this.plugin.text;
+            if(this.plugin.text!="")
+            {
+                scommand += @" ";
+            }
+            scommand+= this.command.text;
             //+ this.Parameter1.Text;
 
             foreach(TextBox tb in this.textboxContents)
