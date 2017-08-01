@@ -147,7 +147,7 @@ namespace EventPluginCommand_
 
             scommand += @"""]}]";
 
-            byte[] t = System.Text.Encoding.ASCII.GetBytes(scommand);
+            byte[] t = System.Text.Encoding.UTF8.GetBytes(scommand);
 
             MemoryStream b = new MemoryStream(t);
             Clipboard.SetData("application/rpgmv-EventCommand", b);
